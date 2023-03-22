@@ -18,14 +18,18 @@
             <img src="../img/Logo.png" alt="Logo">
             <h1>AUROMIA</h1>
         </section>
-        <section class="menu">
-            <ol>
-                <li>Inicio</li>
-                <li>Servicio</li>
-                <li>Ayuda</li>
-                <li>Iniciar sesión</li>
-            </ol>
-        </section>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li class="dropdown">
+              <a>Servicio</a> 
+              <ul class="dropdown-content">
+                <li><a href="./pages/desarrolloSexual.html">Desarrollo sexual</a></li>
+                <li><a href="./pages/miPeriodo.html">Mi periodo</a></li>
+                <li><a href="./pages/metodosAnticonceptivos.html">Metodos anticonceptivos</a></li>
+              </ul>
+            </li>
+            <li><a href="./pages/iniciarSesion.html">Iniciar sesión</a></li>
+          </ul>
         <section class="buscador">
             <input class="inputBuscador"></input>
         </section>
@@ -35,14 +39,12 @@
             <h2>Desarrollo Sexual</h2>
             <div class="desarrolloSexualInfo">
                 <img src="../img/Personas desarrollo sexual.png" alt="">
-                <article class="desarrolloSexualTexto">
-                    <p>El desarrollo sexual femenino secaracteriza por tres etapas: infancia, madurez y senectud. Los límites entre ellas están marcados por la pubertady el climaterio, que son por tanto periodos de transición,y cursan con importantes cambios endocrinológicos y físicos.</p>
-                </article>
+                <p>El desarrollo sexual femenino secaracteriza por tres etapas: infancia, madurez y senectud. Los límites entre ellas están marcados por la pubertady el climaterio, que son por tanto periodos de transición,y cursan con importantes cambios endocrinológicos y físicos.</p>
             </div>
         </section> 
         <section class="laPubertadDeLaMujer">
             <h2>La pubertad de la mujer</h2>
-            <div>
+            <div class="laPubertadDeLaMujerInfo">
                 <article class="prepuberalTexto">
                     <h3>Prepuberal</h3>
                     <p>Tiene lugarentre los 7 y 10 años de edad. Se produce unaespecialización de la hipófisis,
@@ -67,19 +69,12 @@
         <footer class="pieDePagina">
             <article class="servicio">
                 <h4>Sevicio</h4>
-                <ol>
+                <ul>
                     <li>Mi periodo</li>
                     <li>Desarrollo sexual</li>
                     <li>Mi cuerpo</li>
                     <li>Metodos anticonceptivos</li>
-                </ol>
-            </article>
-            <article class="ayuda">
-                <h4>Ayuda</h4>
-                <ol>
-                    <li>Preguntas frecuentes</li>
-                    <li>¿Por que confiar en Auromia?</li>
-                </ol>
+                </ul>
             </article>
             <article class="pieDePaginaLogo">
                 <img src="../img/Logo.png" alt="Logo">
@@ -89,10 +84,11 @@
                 <img src="../img/image 10-1.png" alt="">
                 <img src="../img/image 12.png" alt="">
                 <img src="../img/image 13-2.png" alt="">
-                <div class="chat">
-                    <img src="../img/image 10-1.png" alt="">
-                </div>
-            </article>
+              </article>
+            </footer>
+            <div class="chat">
+              <img src="../img/image 10-1.png" alt="">
+            </div>    
         </footer>
     </main>
 </body>
