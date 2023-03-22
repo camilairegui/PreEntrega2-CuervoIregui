@@ -1,5 +1,5 @@
 # PreEntrega2-CuervoIregui
 
-- Dispositivos:
-  - 1280px
-  - 360px
+- Dispositivos desarrollados:
+  - 1280px (Desktop)
+  - 360px (Mobile)
