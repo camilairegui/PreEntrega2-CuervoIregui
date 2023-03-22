@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900+Condensed&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,14 +18,18 @@
       <img src="./img/Logo.png" alt="Logo">
       <h1>AUROMIA</h1>
     </section>
-    <section class="menu">
-      <ol>
-        <li>Inicio</li>
-        <li>Servicio</li>
-        <li>Ayuda</li>
-        <li>Iniciar sesión</li>
-      </ol>
-    </section>
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li class="dropdown">
+          <a>Servicio</a> 
+          <ul class="dropdown-content">
+            <li><a href="./pages/desarrolloSexual.html">Desarrollo sexual</a></li>
+            <li><a href="./pages/miPeriodo.html">Mi periodo</a></li>
+            <li><a href="./pages/metodosAnticonceptivos.html">Metodos anticonceptivos</a></li>
+          </ul>
+        </li>
+        <li><a href="./pages/iniciarSesion.html">Iniciar sesión</a></li>
+      </ul>
     <section class="buscador">
       <input class="inputBuscador"></input>
     </section>
@@ -39,25 +43,26 @@
             los detalles de cómo funciona o de dónde viene, pero es penosamente obvio cuando no hay. Al igual que cuando
             te cortan el agua, la falta de confianza en ti mismo tiene un enorme impacto negativo en tu salud y estilo
             de vida. Afortunadamente, hay cosas que puedes hacer para aumentarla.
-          </p>
+          </p> 
         </div>
-        <div>
-          <div class="infoSegundoTexto">
+        <div class="infoSegundoTexto">
+          <div class="texto">
             <h3>¿Por que confiar en Auromia?</h3>
             <p>Auromia te ayudara a sentirte segura al hablar de temas el cual tienes miedo, auromia es tu amiga, esa
               amiga que te escuchara en momentos dificiles, te explicara aquellas cosas que se te hacen curiosas sobre
               tu cuerpo o cuando tienes alguna inseguridad de ti misma.
-            </p>
+            </p> 
           </div>
-          <img class="infoSecundoTextoImg" src="./img/image 10.png" alt="">
+          <img class="infoSecundoTextoImg" src="./img/image 10.png" alt=""> 
         </div>
       </article>
       <img class="primeraSeccionImg" src="./img/image_2-removebg-preview.png" alt="">
+      <img class="infoSecundoTextoImgMobile" src="./img/mujer.png" alt="">
     </section>
     <section class="segundaSeccion">
       <article class="primeraCard">
         <h2>¿Quieres hacer un test de autoestima?</h2>
-        <div>
+        <div class="primeraCardTest">
           <div>
             <p>Este test que ayudará a ver que tanta autoestima tienes y las cosas que necesita cierto refuerzos para
               que mejores dia a dia y te ames mas </p>
@@ -68,26 +73,19 @@
       </article>
       <article class="segundaCard">
         <h2>Piramide a la autoestima</h2>
-        <img class="segundaCardImg" src="./img/image-removebg-preview 1.png" alt="">
+        <img class="segundaCardImg" src="./img/Autoestima.png" alt="">
       </article>
     </section>
   </main>
     <footer class="pieDePagina">
       <article class="servicio">
         <h4>Sevicio</h4>
-        <ol>
+        <ul>
           <li>Mi periodo</li>
           <li>Desarrollo sexual</li>
           <li>Mi cuerpo</li>
           <li>Metodos anticonceptivos</li>
-        </ol>
-      </article>
-      <article class="ayuda">
-        <h4>Ayuda</h4>
-        <ol>
-          <li>Preguntas frecuentes</li>
-          <li>¿Por que confiar en Auromia?</li>
-        </ol>
+        </ul>
       </article>
       <article class="pieDePaginaLogo">
         <img src="./img/Logo.png" alt="Logo">
@@ -97,13 +95,10 @@
         <img src="./img/image 10-1.png" alt="">
         <img src="./img/image 12.png" alt="">
         <img src="./img/image 13-2.png" alt="">
-        <div class="chat">
-          <img src="./img/image 10-1.png" alt="">
-        </div>
       </article>
     </footer>
-  
-
+    <div class="chat">
+      <img src="./img/image 10-1.png" alt="">
+    </div>    
 </body>
-
 </html>
