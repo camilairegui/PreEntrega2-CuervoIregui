@@ -2,4 +2,4 @@
 
 - Dispositivos desarrollados:
   - 1280px (Desktop)
-  - 360px (Mobile)
+  - 320px min - 450 max (Mobile)
