@@ -1,0 +1,866 @@
+@import "./partials/__colores";
+@import "./partials/__espaciados";
+@import "./partials/__tipografias";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  &:-webkit-any-link {
+    color: $color_black;
+    text-decoration: none;
+  }
+}
+.encabezado {
+  background-color: #ffa0e5;
+  padding: 17px 48px;
+  display: flex;
+  width: 100vw;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.logo {
+  img {
+    display: inline-block;
+    width: 70px;
+    height: 90px;
+  }
+  h1 {
+    display: inline-block;
+    font-family: $font-family_roboto;
+    font-weight: $font-weight_normal;
+    font-size: $font_size_50;
+  }
+}
+.menu {
+  font-family: $font-family_roboto;
+  font-weight: $font-weight_normal;
+  font-size: $font_size_20;
+  display: flex;
+  list-style: none;
+  gap: $spacing_large;
+  margin-bottom: 10px;
+  &:hover {
+    display: flex;
+  }
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  &:hover {
+    .dropdown-content {
+      display: block;
+    }
+  }
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  list-style: none;
+  background-color: #ffddfc;
+  li {
+    margin-top: 10px;
+  }
+}
+.menu-service {
+  display: none;
+}
+.inputBuscador {
+  width: 248px;
+  height: 35px;
+  background-color: $color_withe;
+  border-radius: $spacing_small;
+  border: none;
+  margin-bottom: 10px;
+}
+.primeraSeccion {
+  padding: $spacing_medium 80px;
+  min-height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.primeraSeccionInfo {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing_large;
+  max-width: 60%;
+}
+.infoPrimerTexto {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing_small;
+  h2 {
+    font-family: $font-family_roboto;
+    font-weight: $font-weight_bold;
+    font-size: 45px;
+    max-width: 530px;
+  }
+  p {
+    font-family: $font-family_roboto;
+    font-weight: $font-weight_small;
+    font-size: $font_size_20;
+  }
+}
+.infoSegundoTexto {
+  display: flex;
+  justify-content: space-between;
+  gap: $spacing_small;
+}
+.texto {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing_small;
+  max-width: 450px;
+  h3 {
+    font-family: $font-family_roboto;
+    font-weight: 900;
+    font-size: 25px;
+  }
+  p {
+    font-family: $font-family_roboto;
+    font-weight: $font-weight_small;
+    font-size: $font_size_20;
+  }
+}
+.infoSecundoTextoImgMobile {
+  visibility: hidden;
+  display: none;
+}
+.segundaSeccion {
+  display: flex;
+  justify-content: space-around;
+  margin-top: $spacing_large;
+}
+.primeraCard {
+  width: 558px;
+  height: 373px;
+  background-color: #ddffff;
+  padding: 18px 46px;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing_large;
+  border-radius: $spacing_extralarge;
+  h2 {
+    font-family: $font-family_roboto;
+    font-weight: $font-weight_bold;
+    font-size: 35px;
+    text-align: center;
+  }
+  a {
+    font-family: $font-family_roboto;
+    font-weight: $font-weight_bold;
+    font-size: $font_size_20;
+    width: 100px;
+    height: 35px;
+    display: inline-block;
+    background-color: #48cfed;
+    border-radius: 10px;
+    padding: 6px 28px;
+    margin-top: $spacing_small;
+  }
+  p {
+    font-family: $font-family_roboto;
+    font-weight: $font-weight_small;
+    font-size: $font_size_20;
+  }
+  img {
+    position: relative;
+    bottom: $spacing_small;
+    width: 90px;
+    height: 170px;
+  }
+}
+.primeraCardTest {
+  display: flex;
+}
+.segundaCard {
+  background-color: #feffdd;
+  width: 558px;
+  height: 373px;
+  padding: 18px 23px;
+  border-radius: $spacing_extralarge;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing_small;
+  align-items: center;
+  img {
+    width: 450px;
+    height: 250px;
+  }
+  h2 {
+    font-family: $font-family_roboto;
+    font-weight: $font-weight_bold;
+    font-size: 35px;
+  }
+}
+.pieDePagina {
+  padding: 21px 111px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: $spacing_large;
+  align-items: flex-end;
+  position: relative;
+  ul {
+    list-style: none;
+  }
+}
+.pieDePaginaLogo {
+  position: absolute;
+  right: 250px;
+  bottom: $spacing_giant;
+  display: flex;
+  align-items: center;
+  img {
+    display: inline-block;
+    width: 110px;
+    height: 140px;
+  }
+  h2 {
+    display: inline-block;
+    font-family: $font-family_roboto;
+    font-weight: $font-weight_normal;
+    font-size: $font_size_50;
+  }
+}
+.chat {
+  width: 100px;
+  height: 100px;
+  background-color: #e8b3a3;
+  border-radius: 100%;
+  padding: $spacing_medium;
+  bottom: $spacing_small;
+  left: 1150px;
+  position: sticky;
+  float: left;
+  z-index: 2;
+}
+.servicio {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing_small;
+  h4 {
+    font-family: $font-family_roboto;
+    font-weight: 600;
+    font-size: $font_size_20;
+  }
+  ul {
+    display: flex;
+    font-family: $font-family_roboto;
+    flex-direction: column;
+    font-weight: $font-weight_small;
+    font-size: $font_size_20;
+    gap: 10px;
+  }
+}
+.desarrolloSexual {
+  padding: 52px 76px;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing_large;
+  h2 {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing_large;
+    font-family: $font-family_roboto;
+    font-weight: $font-weight_bold;
+    font-size: $font_size_50;
+  }
+  img {
+    width: 564px;
+    height: 296px;
+  }
+}
+.desarrolloSexualInfo {
+  display: flex;
+  font-family: $font-family_roboto;
+  font-weight: $font-weight_small;
+  font-size: $font_size_30;
+  gap: $spacing_large;
+  align-items: center;
+  text-align: center;
+}
+.laPubertadDeLaMujer {
+  display: flex;
+  flex-direction: column;
+  padding: $spacing_giant 110px 110px 110px;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  h2 {
+    font-family: $font-family_roboto;
+    font-weight: $font-weight_bold;
+    font-size: $font_size_50;
+  }
+  h3 {
+    font-family: $font-family_roboto;
+    font-weight: $font-weight_bold;
+    font-size: $font_size_40;
+  }
+}
+.laPubertadDeLaMujerInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.prepuberalTexto {
+  width: 420px;
+  height: 420px;
+  border: 1px solid $color_black;
+  border-radius: $spacing_small;
+  display: flex;
+  flex-direction: column;
+  padding: $spacing_medium;
+  align-items: center;
+  gap: $spacing_small;
+  p {
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_small;
+    font-size: 25px;
+    text-align: center;
+  }
+}
+.puberalTexto {
+  width: 420px;
+  height: 420px;
+  border: 1px solid $color_black;
+  border-radius: $spacing_small;
+  display: flex;
+  flex-direction: column;
+  padding: $spacing_medium;
+  align-items: center;
+  gap: $spacing_small;
+  p {
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_small;
+    font-size: 25px;
+    text-align: center;
+  }
+}
+.postpuberalTexto {
+  width: 420px;
+  height: 420px;
+  border: 1px solid $color_black;
+  border-radius: $spacing_small;
+  display: flex;
+  flex-direction: column;
+  padding: $spacing_medium;
+  align-items: center;
+  gap: $spacing_small;
+  p {
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_small;
+    font-size: 25px;
+    text-align: center;
+  }
+}
+.metodosAnticonceptivosInfo {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 55px 100px;
+}
+.pastascondImg {
+  grid-area: 1/1/2/2;
+  width: 310px;
+  height: 345px;
+}
+.infMetodosAnticonceptivos {
+  grid-area: 1/2/2/3;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing_medium;
+  h2 {
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_bold;
+    font-size: $font_size_60;
+    text-align: end;
+  }
+  p {
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_small;
+    font-size: $font_size_30;
+    text-align: end;
+  }
+}
+.metodosTemporales {
+  padding: 55px 53px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.4fr repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  h2 {
+    grid-area: 1/1/2/4;
+    text-align: center;
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_bold;
+    font-size: $font_size_60;
+  }
+}
+.infImplanteSubdermico {
+  grid-area: 2/1/3/2;
+}
+.infAnticonceptivosOrales {
+  grid-area: 2/2/3/3;
+}
+.infAnticonceptivosDeEmergencia {
+  grid-area: 2/3/3/4;
+}
+.infDispositivoIntrauterinoHormonal {
+  grid-area: 3/1/4/2;
+}
+.infCondon {
+  grid-area: 3/2/4/3;
+}
+.infInyeccionMensualOTrimestral {
+  grid-area: 3/3/4/4;
+}
+.circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $spacing_small;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  background-color: rgba(204, 0, 255, 0.17);
+  margin: $spacing_small;
+  p {
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_small;
+    font-size: $font_size_20;
+    text-align: center;
+    &:last-child {
+      font-family: $font-family_normal_roboto;
+      font-weight: $font-weight_bold;
+      font-size: $font_size_20;
+      max-width: 195px;
+    }
+  }
+}
+.miPeridoInf {
+  padding: 73px 97px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 0.6fr);
+  grid-column-gap: 0px;
+  grid-row-gap: $spacing_extralarge;
+  max-height: 680px;
+  h2 {
+    grid-area: 1/1/2/2;
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_bold;
+    font-size: $font_size_60;
+    text-align: center;
+  }
+  p {
+    grid-area: 2/1/3/2;
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_small;
+    font-size: $font_size_30;
+    text-align: center;
+  }
+}
+.imgOvario {
+  width: 349px;
+  height: 256px;
+  grid-area: 3/1/4/2;
+  justify-self: center;
+}
+.imgClicloMens {
+  padding: 65px;
+}
+.iniciarSesion {
+  padding: 252px 103px;
+  background-image: url("../img/fondo chicas.png");
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: 100%;
+}
+.InfIniciarSesion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $background-color_white;
+  width: 1073px;
+  height: 626px;
+  border-radius: 100px;
+}
+.imgChicas {
+  width: 475px;
+  height: 626px;
+  display: inline-block;
+}
+.textoChicas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 480px;
+  height: 440px;
+  margin-left: 65px;
+  h2 {
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_normal;
+    font-size: $font_size_40;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  input {
+    min-width: 471px;
+    background: rgba(252, 239, 241, 0.66);
+    border: 1px solid $color_black;
+    border-radius: 200px;
+    height: 53px;
+    margin-bottom: 35px;
+  }
+  label {
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_normal;
+    font-size: $font_size_20;
+    margin-bottom: 15px;
+    text-align: start;
+  }
+  p {
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_normal;
+    font-size: $font_size_20;
+    text-align: center;
+    margin-bottom: $spacing_large;
+  }
+  h4 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 130px;
+    color: #ffffff;
+    width: 217px;
+    height: 38px;
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_normal;
+    font-size: $font_size_20;
+    background: rgba(116, 82, 255, 0.84);
+    border-radius: 300px;
+  }
+  h3 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: $spacing_giant;
+    left: 670px;
+    color: #ffffff;
+    width: 217px;
+    height: 38px;
+    font-family: $font-family_normal_roboto;
+    font-weight: $font-weight_normal;
+    font-size: $font_size_20;
+    background: rgba(116, 82, 255, 0.84);
+    border-radius: 300px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 450px){
+  .menu {
+    font-weight: $font-weight_normal;
+    font-size: $font_size_20;
+    min-width: 100%;
+    gap: 10px;
+    justify-content: center;
+  }
+  .buscador {
+    visibility: hidden;
+    display: none;
+  }
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing_small;
+    padding: $spacing_medium;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    h1 {
+      font-weight: $font-weight_normal;
+      font-size: 25px;
+    }
+    img {
+      width: 35px;
+      height: 45px;
+    }
+  }
+  .dropdown-content {
+    min-width: 100px;
+  }
+  .primeraSeccionImg {
+    visibility: hidden;
+    display: none;
+  }
+  .infoSecundoTextoImgMobile {
+    visibility: visible;
+    display: initial;
+  }
+  .primeraSeccion {
+    padding: $spacing_small;
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+    gap: $spacing_large;
+    min-height: unset;
+    text-align: center;
+  }
+  .infoPrimerTexto {
+    h2 {
+      font-size: $font_size_20;
+      max-width: 530px;
+    }
+    p {
+      font-weight: $font-weight_small;
+      font-size: $font_size_10;
+    }
+  }
+  .primeraSeccionInfo {
+    max-width: 100%;
+  }
+  .infoSegundoTexto {
+    h3 {
+      font-weight: $font-weight_bold;
+      font-size: $font_size_20;
+    }
+    p {
+      font-weight: $font-weight_small;
+      font-size: $font_size_10;
+    }
+  }
+  .infoSecundoTextoImg {
+    visibility: hidden;
+    display: none;
+  }
+  .segundaSeccion {
+    visibility: hidden;
+    display: none;
+  }
+  .pieDePagina {
+    background-color: #ffa0e5;
+    padding: $spacing_medium $spacing_medium $spacing_giant $spacing_medium;
+  }
+  .chat {
+    visibility: hidden;
+    display: none;
+  }
+  .servicio {
+    gap: 10px;
+    h4 {
+      font-size: $font_size_10;
+    }
+    ul {
+      font-size: $font_size_10;
+      gap: 10px;
+    }
+  }
+  .pieDePaginaLogo {
+    right: $spacing_medium;
+    bottom: 80px;
+    img {
+      width: $spacing_extralarge;
+      height: $spacing_giant;
+    }
+    h2 {
+      font-size: $font_size_20;
+    }
+  }
+  .contacto {
+    position: absolute;
+    left: 120px;
+    bottom: 0;
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .desarrolloSexual {
+    padding: $spacing_small;
+    h2 {
+      font-size: $font_size_20;
+    }
+  }
+  .desarrolloSexualInfo {
+    gap: 10px;
+    img {
+      width: 200px;
+      height: 75px;
+    }
+    p {
+      font-size: $font_size_10;
+      text-align: center;
+    }
+  }
+  .laPubertadDeLaMujer {
+    padding: $spacing_small;
+    justify-content: none;
+    gap: $spacing_small;
+    h2 {
+      font-size: $font_size_20;
+    }
+    h3 {
+      font-size: 13px;
+    }
+  }
+  .laPubertadDeLaMujerInfo {
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing_small;
+  }
+  .prepuberalTexto {
+    width: 162px;
+    height: 162px;
+    padding: 10px;
+    gap: 10px;
+    p {
+      font-size: $font_size_10;
+    }
+  }
+  .puberalTexto {
+    width: 162px;
+    height: 162px;
+    padding: 10px;
+    gap: 10px;
+    p {
+      font-size: $font_size_10;
+    }
+  }
+  .postpuberalTexto {
+    width: 162px;
+    height: 162px;
+    padding: 10px;
+    gap: 10px;
+    p {
+      font-size: $font_size_10;
+    }
+  }
+  .metodosAnticonceptivosInfo {
+    padding: $spacing_small 13px;
+    height: 200px;
+  }
+  .pastascondImg {
+    width: 80px;
+    height: 100px;
+    margin-top: $spacing_extralarge;
+  }
+  .infMetodosAnticonceptivos {
+    gap: 10px;
+    min-height: 400px;
+    h2 {
+      font-size: $font_size_20;
+    }
+    p {
+      font-size: $font_size_10;
+    }
+  }
+  .metodosTemporales {
+    padding: $spacing_small 13px;
+    grid-row-gap: $spacing_small;
+    h2 {
+      font-size: $font_size_20;
+    }
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    gap: 0;
+    img {
+      width: 35px;
+      height: 35px;
+    }
+    p {
+      font-size: 8px;
+      &:last-child {
+        font-size: 8px;
+        max-width: 80px;
+      }
+    }
+  }
+  .miPeridoInf {
+    padding: $spacing_small 16px;
+    grid-row-gap: 10px;
+    h2 {
+      font-size: $font_size_20;
+    }
+    p {
+      font-size: 8px;
+    }
+  }
+  .imgOvario {
+    width: 108px;
+    height: 80px;
+  }
+  .imgClicloMens {
+    padding: $spacing_medium;
+    width: 320px;
+    height: 450px;
+  }
+  .imgChicas {
+    display: none;
+    visibility: hidden;
+  }
+  .iniciarSesion {
+    padding: $spacing_extralarge;
+    background-size: cover;
+  }
+  .InfIniciarSesion {
+    width: 230px;
+    height: 200px;
+    border-radius: $spacing_small;
+    padding: $spacing_small;
+  }
+  .textoChicas {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    h2 {
+      font-size: $font_size_20;
+      margin: 0;
+    }
+    label {
+      font-size: 8px;
+      margin: 0;
+    }
+    p {
+      font-size: 8px;
+      margin-bottom: 0;
+    }
+    h4 {
+      width: 90px;
+      height: $spacing_medium;
+      font-size: 8px;
+    }
+    input {
+      min-width: 155px;
+      height: $spacing_medium;
+      margin-bottom: 0px;
+    }
+    h3 {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}

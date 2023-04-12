@@ -3,11 +3,12 @@
   margin: 0;
   padding: 0;
 }
+
 a:-webkit-any-link {
   color: black;
   text-decoration: none;
 }
-/* Encabezado */
+
 .encabezado {
   background-color: #ffa0e5;
   padding: 17px 48px;
@@ -16,6 +17,7 @@ a:-webkit-any-link {
   align-items: flex-end;
   justify-content: space-between;
 }
+
 .logo img {
   display: inline-block;
   width: 70px;
@@ -27,6 +29,7 @@ a:-webkit-any-link {
   font-weight: 400;
   font-size: 50px;
 }
+
 .menu {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
@@ -36,10 +39,18 @@ a:-webkit-any-link {
   gap: 40px;
   margin-bottom: 10px;
 }
+.menu:hover {
+  display: flex;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
 }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -54,15 +65,11 @@ a:-webkit-any-link {
 .dropdown-content li {
   margin-top: 10px;
 }
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.menu:hover {
-  display: flex;
-}
+
 .menu-service {
   display: none;
 }
+
 .inputBuscador {
   width: 248px;
   height: 35px;
@@ -71,19 +78,21 @@ a:-webkit-any-link {
   border: none;
   margin-bottom: 10px;
 }
-/* Main */
+
 .primeraSeccion {
   padding: 30px 80px;
   min-height: 600px;
   display: flex;
   justify-content: space-between;
 }
+
 .primeraSeccionInfo {
   display: flex;
   flex-direction: column;
   gap: 40px;
   max-width: 60%;
 }
+
 .infoPrimerTexto {
   display: flex;
   flex-direction: column;
@@ -100,11 +109,13 @@ a:-webkit-any-link {
   font-weight: 300;
   font-size: 20px;
 }
+
 .infoSegundoTexto {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
+
 .texto {
   display: flex;
   flex-direction: column;
@@ -121,15 +132,18 @@ a:-webkit-any-link {
   font-weight: 300;
   font-size: 20px;
 }
+
 .infoSecundoTextoImgMobile {
   visibility: hidden;
   display: none;
 }
+
 .segundaSeccion {
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
 }
+
 .primeraCard {
   width: 558px;
   height: 373px;
@@ -158,9 +172,6 @@ a:-webkit-any-link {
   padding: 6px 28px;
   margin-top: 20px;
 }
-.primeraCardTest {
-  display: flex;
-}
 .primeraCard p {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
@@ -172,6 +183,11 @@ a:-webkit-any-link {
   width: 90px;
   height: 170px;
 }
+
+.primeraCardTest {
+  display: flex;
+}
+
 .segundaCard {
   background-color: #feffdd;
   width: 558px;
@@ -192,7 +208,7 @@ a:-webkit-any-link {
   font-weight: 700;
   font-size: 35px;
 }
-/* Pie De Pagina */
+
 .pieDePagina {
   padding: 21px 111px;
   display: flex;
@@ -204,6 +220,7 @@ a:-webkit-any-link {
 .pieDePagina ul {
   list-style: none;
 }
+
 .pieDePaginaLogo {
   position: absolute;
   right: 250px;
@@ -222,6 +239,7 @@ a:-webkit-any-link {
   font-weight: 400;
   font-size: 50px;
 }
+
 .chat {
   width: 100px;
   height: 100px;
@@ -234,6 +252,7 @@ a:-webkit-any-link {
   float: left;
   z-index: 2;
 }
+
 .servicio {
   display: flex;
   flex-direction: column;
@@ -252,7 +271,7 @@ a:-webkit-any-link {
   font-size: 20px;
   gap: 10px;
 }
-/* desarrolloSexual */
+
 .desarrolloSexual {
   padding: 52px 76px;
   display: flex;
@@ -267,6 +286,11 @@ a:-webkit-any-link {
   font-weight: 700;
   font-size: 50px;
 }
+.desarrolloSexual img {
+  width: 564px;
+  height: 296px;
+}
+
 .desarrolloSexualInfo {
   display: flex;
   font-family: "Roboto Condensed", sans-serif;
@@ -276,10 +300,7 @@ a:-webkit-any-link {
   align-items: center;
   text-align: center;
 }
-.desarrolloSexual img {
-  width: 564px;
-  height: 296px;
-}
+
 .laPubertadDeLaMujer {
   display: flex;
   flex-direction: column;
@@ -298,15 +319,17 @@ a:-webkit-any-link {
   font-weight: 700;
   font-size: 40px;
 }
+
 .laPubertadDeLaMujerInfo {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .prepuberalTexto {
   width: 420px;
   height: 420px;
-  border: 1px solid #000000;
+  border: 1px solid black;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -320,10 +343,11 @@ a:-webkit-any-link {
   font-size: 25px;
   text-align: center;
 }
+
 .puberalTexto {
   width: 420px;
   height: 420px;
-  border: 1px solid #000000;
+  border: 1px solid black;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -337,10 +361,11 @@ a:-webkit-any-link {
   font-size: 25px;
   text-align: center;
 }
+
 .postpuberalTexto {
   width: 420px;
   height: 420px;
-  border: 1px solid #000000;
+  border: 1px solid black;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -354,60 +379,241 @@ a:-webkit-any-link {
   font-size: 25px;
   text-align: center;
 }
-/*metodos anticonceptivos*/
-.metodosAnticonceptivos {
-  padding: 74px 100px;
+
+.metodosAnticonceptivosInfo {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 55px 100px;
 }
+
+.pastascondImg {
+  grid-area: 1/1/2/2;
+  width: 310px;
+  height: 345px;
+}
+
+.infMetodosAnticonceptivos {
+  grid-area: 1/2/2/3;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.infMetodosAnticonceptivos h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: end;
+}
+.infMetodosAnticonceptivos p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: end;
+}
+
 .metodosTemporales {
   padding: 55px 53px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.4fr repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
+.metodosTemporales h2 {
+  grid-area: 1/1/2/4;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.infImplanteSubdermico {
+  grid-area: 2/1/3/2;
+}
+
+.infAnticonceptivosOrales {
+  grid-area: 2/2/3/3;
+}
+
+.infAnticonceptivosDeEmergencia {
+  grid-area: 2/3/3/4;
+}
+
+.infDispositivoIntrauterinoHormonal {
+  grid-area: 3/1/4/2;
+}
+
+.infCondon {
+  grid-area: 3/2/4/3;
+}
+
+.infInyeccionMensualOTrimestral {
+  grid-area: 3/3/4/4;
+}
+
 .circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   width: 350px;
   height: 350px;
   border-radius: 100%;
   background-color: rgba(204, 0, 255, 0.17);
-  padding: 106px;
   margin: 20px;
 }
-/*Mi periodo*/
+.circle p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+}
+.circle p:last-child {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  max-width: 195px;
+}
+
 .miPeridoInf {
   padding: 73px 97px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 0.6fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 50px;
+  max-height: 680px;
 }
+.miPeridoInf h2 {
+  grid-area: 1/1/2/2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+}
+.miPeridoInf p {
+  grid-area: 2/1/3/2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+}
+
 .imgOvario {
   width: 349px;
   height: 256px;
-  padding: 57px;
+  grid-area: 3/1/4/2;
+  justify-self: center;
 }
-/*inicar sesion*/
+
+.imgClicloMens {
+  padding: 65px;
+}
+
 .iniciarSesion {
   padding: 252px 103px;
-  background-image: url("../img/fondo\ chicas.png");
+  background-image: url("../img/fondo chicas.png");
   background-repeat: no-repeat;
   width: 100vw;
   background-size: 100%;
 }
+
 .InfIniciarSesion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: white;
   width: 1073px;
   height: 626px;
+  border-radius: 100px;
 }
+
 .imgChicas {
   width: 475px;
   height: 626px;
   display: inline-block;
 }
+
 .textoChicas {
-  padding: 81px 65px;
-  display: inline-block;
-  position: relative;
-  bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 480px;
+  height: 440px;
+  margin-left: 65px;
 }
-@media (max-width: 360px) {
+.textoChicas h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.textoChicas input {
+  min-width: 471px;
+  background: rgba(252, 239, 241, 0.66);
+  border: 1px solid black;
+  border-radius: 200px;
+  height: 53px;
+  margin-bottom: 35px;
+}
+.textoChicas label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: start;
+}
+.textoChicas p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.textoChicas h4 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 130px;
+  color: #ffffff;
+  width: 217px;
+  height: 38px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  background: rgba(116, 82, 255, 0.84);
+  border-radius: 300px;
+}
+.textoChicas h3 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 60px;
+  left: 670px;
+  color: #ffffff;
+  width: 217px;
+  height: 38px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  background: rgba(116, 82, 255, 0.84);
+  border-radius: 300px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
   .menu {
     font-weight: 400;
     font-size: 20px;
     min-width: 100%;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
   }
   .buscador {
@@ -459,12 +665,12 @@ a:-webkit-any-link {
     font-size: 20px;
     max-width: 530px;
   }
-  .primeraSeccionInfo {
-    max-width: 100%;
-  }
   .infoPrimerTexto p {
     font-weight: 300;
     font-size: 10px;
+  }
+  .primeraSeccionInfo {
+    max-width: 100%;
   }
   .infoSegundoTexto h3 {
     font-weight: 700;
@@ -545,13 +751,13 @@ a:-webkit-any-link {
   .laPubertadDeLaMujer h2 {
     font-size: 20px;
   }
+  .laPubertadDeLaMujer h3 {
+    font-size: 13px;
+  }
   .laPubertadDeLaMujerInfo {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-  }
-  .laPubertadDeLaMujer h3 {
-    font-size: 13px;
   }
   .prepuberalTexto {
     width: 162px;
@@ -580,4 +786,117 @@ a:-webkit-any-link {
   .postpuberalTexto p {
     font-size: 10px;
   }
+  .metodosAnticonceptivosInfo {
+    padding: 20px 13px;
+    height: 200px;
+  }
+  .pastascondImg {
+    width: 80px;
+    height: 100px;
+    margin-top: 50px;
+  }
+  .infMetodosAnticonceptivos {
+    gap: 10px;
+    min-height: 400px;
+  }
+  .infMetodosAnticonceptivos h2 {
+    font-size: 20px;
+  }
+  .infMetodosAnticonceptivos p {
+    font-size: 10px;
+  }
+  .metodosTemporales {
+    padding: 20px 13px;
+    grid-row-gap: 20px;
+  }
+  .metodosTemporales h2 {
+    font-size: 20px;
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    gap: 0;
+  }
+  .circle img {
+    width: 35px;
+    height: 35px;
+  }
+  .circle p {
+    font-size: 8px;
+  }
+  .circle p:last-child {
+    font-size: 8px;
+    max-width: 80px;
+  }
+  .miPeridoInf {
+    padding: 20px 16px;
+    grid-row-gap: 10px;
+  }
+  .miPeridoInf h2 {
+    font-size: 20px;
+  }
+  .miPeridoInf p {
+    font-size: 8px;
+  }
+  .imgOvario {
+    width: 108px;
+    height: 80px;
+  }
+  .imgClicloMens {
+    padding: 30px;
+    width: 320px;
+    height: 450px;
+  }
+  .imgChicas {
+    display: none;
+    visibility: hidden;
+  }
+  .iniciarSesion {
+    padding: 50px;
+    background-size: cover;
+  }
+  .InfIniciarSesion {
+    width: 230px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .textoChicas {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .textoChicas h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .textoChicas label {
+    font-size: 8px;
+    margin: 0;
+  }
+  .textoChicas p {
+    font-size: 8px;
+    margin-bottom: 0;
+  }
+  .textoChicas h4 {
+    width: 90px;
+    height: 30px;
+    font-size: 8px;
+  }
+  .textoChicas input {
+    min-width: 155px;
+    height: 30px;
+    margin-bottom: 0px;
+  }
+  .textoChicas h3 {
+    display: none;
+    visibility: hidden;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */
